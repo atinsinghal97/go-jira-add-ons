@@ -1,0 +1,6 @@
+{
+  "commonDetails": {
+    "label": "labelx"
+  },
+  "tickets": ["SCCF-62", "SCCF-63"]
+}

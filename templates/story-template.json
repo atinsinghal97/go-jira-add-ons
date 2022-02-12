@@ -1,0 +1,22 @@
+{
+  "commonDetails": {
+    "project": "SCCF",
+    "components": "Comp1",
+    "reporter": " ",
+    "issueType": "Story"
+  },
+  "tickets": [
+    {
+      "summary": "Test Summary1",
+      "description": "Test Description1"
+    },
+    {
+      "summary": "Test Summary2",
+      "description": "Test Multi-Line \nDescription2"
+    },
+    {
+      "summary": "Test Summary3",
+      "description": "h1. Header \n*bold* \n_italics_ \n+underline+ \n* List1 \n* List2"
+    }
+  ]
+}

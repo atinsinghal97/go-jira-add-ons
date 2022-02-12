@@ -1,0 +1,17 @@
+{
+  "commonDetails": {
+    "parentIssueId": "SCCF-55",
+    "components": "Comp1",
+    "reporter": " "
+  },
+  "tickets": [
+    {
+      "summary": "Test Summary1",
+      "description": "Test Description1"
+    },
+    {
+      "summary": "Test Summary2",
+      "description": "Test Multi-Line \nDescription2"
+    }
+  ]
+}

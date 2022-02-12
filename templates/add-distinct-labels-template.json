@@ -1,0 +1,12 @@
+{
+  "tickets": [
+    {
+      "ticket_id": "SCCF-62",
+      "label": "label1"
+    },
+    {
+      "ticket_id": "SCCF-63",
+      "label": "label2"
+    }
+  ]
+}

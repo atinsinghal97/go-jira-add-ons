@@ -1,6 +1,14 @@
 #!/bin/bash
+set -e
 
-FILE="templates/story-template.json"
+DIRNAME="$(dirname "$0")"
+
+source "${DIRNAME}/validate-file.sh"
+source "${DIRNAME}/usage.sh"
+source "${DIRNAME}/init.sh"
+
+TEMPLATE_FILE="${DIRNAME}/templates/story-template.json"
+validate_file -f "${FILE}" -d "${USE_DEFAULT}" -t "${TEMPLATE_FILE}"
 
 PROJECT=$(jq -r '.commonDetails.project' ${FILE})
 COMPONENTS=$(jq -r '.commonDetails.components' ${FILE})

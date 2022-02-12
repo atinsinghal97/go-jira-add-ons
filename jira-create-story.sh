@@ -2,12 +2,12 @@
 set -e
 
 DIRNAME="$(dirname "$0")"
+TEMPLATE_FILE="${DIRNAME}/templates/story-template.json"
 
 source "${DIRNAME}/validate-file.sh"
 source "${DIRNAME}/usage.sh"
 source "${DIRNAME}/init.sh"
 
-TEMPLATE_FILE="${DIRNAME}/templates/story-template.json"
 validate_file -f "${FILE}" -d "${USE_DEFAULT}" -t "${TEMPLATE_FILE}"
 
 PROJECT=$(jq -r '.commonDetails.project' ${FILE})

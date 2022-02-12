@@ -2,12 +2,12 @@
 set -e
 
 DIRNAME="$(dirname "$0")"
+TEMPLATE_FILE="${DIRNAME}/templates/add-to-epic-template.json"
 
 source "${DIRNAME}/validate-file.sh"
 source "${DIRNAME}/usage.sh"
 source "${DIRNAME}/init.sh"
 
-TEMPLATE_FILE="${DIRNAME}/templates/add-to-epic-template.json"
 validate_file -f "${FILE}" -d "${USE_DEFAULT}" -t "${TEMPLATE_FILE}"
 
 EPIC_ID=$(jq -r '.commonDetails.epicId' ${FILE})

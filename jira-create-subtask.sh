@@ -4,10 +4,10 @@ set -e
 DIRNAME="$(dirname "$0")"
 TEMPLATE_FILE="${DIRNAME}/templates/subtask-template.json"
 
-source "${DIRNAME}/validate-session.sh"
-source "${DIRNAME}/validate-file.sh"
-source "${DIRNAME}/usage.sh"
-source "${DIRNAME}/init.sh"
+source "${DIRNAME}/supporting-functions/validate-session.sh"
+source "${DIRNAME}/supporting-functions/validate-file.sh"
+source "${DIRNAME}/supporting-functions/usage.sh"
+source "${DIRNAME}/supporting-functions/init.sh"
 
 validate_file -f "${FILE}" -d "${USE_DEFAULT}" -t "${TEMPLATE_FILE}"
 

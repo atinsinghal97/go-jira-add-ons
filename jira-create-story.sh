@@ -4,6 +4,7 @@ set -e
 DIRNAME="$(dirname "$0")"
 TEMPLATE_FILE="${DIRNAME}/templates/story-template.json"
 
+source "${DIRNAME}/validate-session.sh"
 source "${DIRNAME}/validate-file.sh"
 source "${DIRNAME}/usage.sh"
 source "${DIRNAME}/init.sh"

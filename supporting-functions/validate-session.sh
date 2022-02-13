@@ -1,7 +1,7 @@
 #!/bin/bash
 
 validate_session () {
-    JIRA_SESSION="$(jira session)"
+    JIRA_SESSION="$(jira session | tee /dev/null)"
     STATUS="$(echo ${JIRA_SESSION} | cut -d' ' -f1)"
     if [ "${STATUS}" != "loginInfo:" ]; then
         echo "ERROR:"

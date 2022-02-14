@@ -37,4 +37,4 @@ _Note: v1.0 has no code changes compared to v0.5. It marks a stable release and 
   - Add story to epic
   - Add a label to multiple issues
   - Add multiple labels to a single issue
-  - Add distinct (single) labels to multiple issues.
+  - Add distinct (single) labels to multiple issues

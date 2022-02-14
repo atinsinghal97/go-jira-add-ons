@@ -3,6 +3,7 @@
 - [Prereqs](#prereqs)
 - [Configuration](#configuration)
 - [Can I Perform Actions in Bulk?](#can-i-perform-actions-in-bulk)
+- [Is there a test instance where I can try these scripts out?](#is-there-a-test-instance-where-i-can-try-these-scripts-out)
 
 ## Prereqs
 
@@ -46,3 +47,9 @@ A few scripts for common use-cases are available which can help you perform acti
 | [Add Distinct (Single) Labels to Multiple Issues Script](/jira-add-distinct-labels.sh) | [Add Distinct (Single) Labels to Multiple Issues Template](templates/add-distinct-labels-template.json) |
 
 A sample aliases file is provided [here](sample/source_aliases.sh). To test them out run `source sample/source_aliases.sh` in terminal. To load this by default every time, add that command to your `$HOME/.zshrc` or `$HOME/.bashrc` file. Make sure to use the full path to the file.
+
+## Is there a test instance where I can try these scripts out?
+
+It makes sense that you wouldn't want to test this out against your main JIRA project while you figure things out. You can setup your own local JIRA instance using Docker within a few minutes. (You'll need to activate a JIRA trial but don't worry once you run the container, JIRA will guide you through.)
+
+Here's the link to the [Official JIRA Image by Atlassian](https://hub.docker.com/r/atlassian/jira-software).

@@ -15,6 +15,8 @@
    brew install go-jira
    ```
 
+   _Notes: Tested with go-jira: stable 1.0.27_
+
 ## Configuration
 
 1. Prepare your local configuration file:
@@ -50,6 +52,6 @@ A sample aliases file is provided [here](sample/source_aliases.sh). To test them
 
 ## Is there a test instance where I can try these scripts out?
 
-It makes sense that you wouldn't want to test this out against your main JIRA project while you figure things out. You can setup your own local JIRA instance using Docker within a few minutes. (You'll need to activate a JIRA trial but don't worry once you run the container, JIRA will guide you through.)
+If you want to test the scripts in a demo environment before running it against your main JIRA board, you can setup your own local JIRA instance using Docker within minutes. (You'll need to activate a JIRA trial but don't worry once you run the container, JIRA will guide you through.)
 
 Here's the link to the [Official JIRA Image by Atlassian](https://hub.docker.com/r/atlassian/jira-software).

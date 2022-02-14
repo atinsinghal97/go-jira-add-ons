@@ -16,6 +16,8 @@ COMPONENTS=$(jq -r '.commonDetails.components' ${FILE})
 REPORTER=$(jq -r '.commonDetails.reporter' ${FILE})
 ISSUE_TYPE=$(jq -r '.commonDetails.issueType' ${FILE})
 
+REPORTER=" " # override value to make sure others don't break the script
+
 TICKET_ID=( )
 
 for row in $(jq -r '.tickets[] | @base64' ${FILE}); do

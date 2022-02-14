@@ -2,6 +2,10 @@
 
 ## GO-JIRA Add-Ons
 
+### v1.1
+
+- overrides `commonDetails.reporter` to set an empty string.
+
 ### v1.0
 
 _Note: v1.0 has no code changes compared to v0.5. It marks a stable release and adds sample files._
